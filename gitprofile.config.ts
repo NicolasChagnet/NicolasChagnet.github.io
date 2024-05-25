@@ -70,8 +70,8 @@ const CONFIG = {
     udemy: '',
     dribbble: '',
     behance: '',
-    medium: 'arifszn',
-    dev: 'arifszn',
+    medium: '',
+    dev: '',
     stackoverflow: '', // example: '1/jeff-atwood'
     skype: '',
     telegram: '',
@@ -144,7 +144,7 @@ const CONFIG = {
     {
       title: 'Hydrodynamics of a relativistic charged fluid in the presence of a periodically modulated chemical potential',
       conferenceName: '',
-      journalName: 'Scipost Physics',
+      journalName: 'Scipost Physics (2024)',
       authors: 'Nicolas Chagnet and Koenraad Schalm',
       link: 'https://doi.org/10.21468/SciPostPhys.16.1.028',
       description:
@@ -153,11 +153,11 @@ const CONFIG = {
     {
       title: 'T-linear resistivity, optical conductivity, and Planckian transport for a holographic local quantum critical metal in a periodic potential',
       conferenceName: '',
-      journalName: 'Physical Review B',
+      journalName: 'Physical Review B (2023)',
       authors: 'F. Balm, N. Chagnet, S. Arend, J. Aretz, K. Grosvenor, M. Janse, O. Moors, J. Post, V. Ohanesjan, D. Rodriguez-Fernandez, K. Schalm, and J. Zaanen',
       link: 'https://doi.org/10.1103/PhysRevB.108.125145',
       description:
-        'High-Tc cuprate strange metals are characterized by a DC resistivity that scales linearly with T from the onset of superconductivity to the crystal melting temperature, characterized by a current life time τ≃ℏ/(kBT), the “Planckian dissipation”. At the same time, the optical conductivity ceases to be of the Drude form at high temperatures, suggesting a change of the underlying dynamics that surprisingly leaves the T-linear DC resistivity unaffected. We use the AdS/CFT correspondence that describes strongly coupled, densely many-body entangled metallic states of matter to study the DC thermoelectrical transport properties and the optical conductivities of the local quantum critical Gubser-Rocha holographic strange metal in 2+1 dimensions in the presence of a lattice potential, a prime candidate to compare with experiment. We find that the electrical DC resistivity is linear in T at low temperatures for a large range of potential strengths and wave vectors, even as it transitions between different dissipative regimes. At weak lattice potential the optical conductivity evolves as a function of increasing temperature from a Drude form to a “bad metal” characterized by a mid-IR resonance without changing the DC transport, similar to that seen in cuprate strange metals. This mid-IR peak and notably its temperature evolution can be fully understood as a consequence of umklapp hydrodynamics: i.e., hydrodynamic perturbations are Bloch modes in the presence of a lattice. At strong lattice potential an “incoherent metal” is realized instead where momentum conservation no longer plays a role in the transport. We confirm that in this regime the thermal diffusivity appears to be insensitive to the breaking of translations and can be explained by Planckian dissipation originating in universal microscopic chaos. A similar behavior has been found for holographic metals with strong homogeneous momentum relaxation. The charge diffusivity does not submit to this chaos explanation, even though the continuing linear-in-T DC resistivity saturates to an apparent universal slope, numerically equal to a Planckian rate.',
+        'High-Tc cuprate strange metals are characterized by a DC resistivity that scales linearly with T from the onset of superconductivity to the crystal melting temperature, characterized by a current life time τ≃ℏ/(kBT), the “Planckian dissipation”. At the same time, the optical conductivity ceases to be of the Drude form at high temperatures, suggesting a change of the underlying dynamics that surprisingly leaves the T-linear DC resistivity unaffected. We use the AdS/CFT correspondence that describes strongly coupled, densely many-body entangled metallic states of matter to study...',
     },
     {
       title: 'Quantization and variational problem of the Gubser-Rocha Einstein-Maxwell-Dilaton model, conformal and non-conformal deformations, and its proper thermodynamics',
@@ -166,7 +166,7 @@ const CONFIG = {
       authors: 'Nicolas Chagnet, Floris Balm and Koenraad Schalm',
       link: 'https://doi.org/10.1007/JHEP03(2023)081',
       description:
-        'We show that the strongly coupled field theory holographically dual to the Gubser-Rocha anti-de-Sitter Einstein-Maxwell-Dilaton theory describes not a single non-trivial AdS2​ IR fixed point, but a one-parameter family. It is dual to a local quantum critical phase instead of a quantum critical point. This result follows from a detailed analysis of the possible quantizations of the gravitational theory that is consistent with the thermodynamics of the analytical Gubser-Rocha black hole solution. The analytic Gubser-Rocha black hole is only a 2-parameter subset of all possible solutions, and we construct other members numerically. These new numerical solutions correspond to turning on an additional scalar charge. Moreover, each solution has multiple holographic interpretations depending on the quantization chosen. In one particular quantization involving a multitrace deformation the scalar charge is a marginal operator. In other quantizations where the marginal multitrace operator is turned off, the analytic Gubser-Rocha black hole does not describe a finite temperature conformal fluid.',
+        'We show that the strongly coupled field theory holographically dual to the Gubser-Rocha anti-de-Sitter Einstein-Maxwell-Dilaton theory describes not a single non-trivial AdS2​ IR fixed point, but a one-parameter family. It is dual to a local quantum critical phase instead of a quantum critical point. This result follows from a detailed analysis of the possible quantizations of the gravitational theory that is consistent with the thermodynamics of the analytical Gubser-Rocha black hole solution...',
     },
     {
       title: 'Emerging Fermi liquids from regulated quantum electron stars',
