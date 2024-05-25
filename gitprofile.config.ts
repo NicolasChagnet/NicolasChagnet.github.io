@@ -29,37 +29,38 @@ const CONFIG = {
       },
     },
     external: {
-      header: 'My Projects',
+      // header: 'My Projects',
       // To hide the `External Projects` section, keep it empty.
-      projects: [
-        {
-          title: 'Project Name',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
-        },
-        {
-          title: 'Project Name',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
-        },
-      ],
+      // projects: [
+      //   {
+      //     title: 'Project Name',
+      //     description:
+      //       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+      //     imageUrl:
+      //       'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
+      //     link: 'https://example.com',
+      //   },
+      //   {
+      //     title: 'Project Name',
+      //     description:
+      //       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+      //     imageUrl:
+      //       'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
+      //     link: 'https://example.com',
+      //   },
+      // ],
     },
   },
   seo: {
-    title: 'Portfolio of Ariful Alam',
+    title: 'Portfolio of Nicolas Chagnet',
     description: '',
     imageURL: '',
   },
   social: {
-    linkedin: 'ariful-alam',
-    twitter: 'arif_szn',
-    mastodon: 'arifszn@mastodon.social',
+    linkedin: 'nchagnet',
+    // inspire: 'https://inspirehep.net/authors/1944891',
+    twitter: '',
+    mastodon: '',
     researchGate: '',
     facebook: '',
     instagram: '',
@@ -74,108 +75,138 @@ const CONFIG = {
     stackoverflow: '', // example: '1/jeff-atwood'
     skype: '',
     telegram: '',
-    website: 'https://www.arifszn.com',
+    website: '',
     phone: '',
-    email: 'arifulalamszn@gmail.com',
+    email: 'nchagnet@pm.me',
   },
   resume: {
     fileUrl:
-      'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
+      'public/nicolas_chagnet_cv.pdf', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
-    'PHP',
-    'Laravel',
-    'JavaScript',
-    'React.js',
-    'Node.js',
-    'Nest.js',
-    'MySQL',
-    'PostgreSQL',
-    'Git',
-    'Docker',
-    'PHPUnit',
-    'CSS',
-    'Antd',
-    'Tailwind',
+    'Python',
+    'Numpy',
+    'Pandas',
+    'Scikit-Learn',
+    'SQL',
+    'Tensorflow',
+    // 'PySpark',
+    // 'DataBricks',
+    'Rust',
+    'Julia',
+    'HTML/CSS',
+    'Javascript',
+    'Linux'
   ],
   experiences: [
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'September 2021',
+      company: 'Leiden University',
+      position: 'Research Scientist',
+      from: 'September 2020',
       to: 'Present',
-      companyLink: 'https://example.com',
     },
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'July 2019',
-      to: 'August 2021',
-      companyLink: 'https://example.com',
+      company: 'Leiden University',
+      position: 'Teacher Assistant',
+      from: 'September 2020',
+      to: 'Present',
     },
   ],
-  certifications: [
-    {
-      name: 'Lorem ipsum',
-      body: 'Lorem ipsum dolor sit amet',
-      year: 'March 2022',
-      link: 'https://example.com',
-    },
-  ],
+  // certifications: [
+  //   {
+  //     name: 'Lorem ipsum',
+  //     body: 'Lorem ipsum dolor sit amet',
+  //     year: 'March 2022',
+  //     link: 'https://example.com',
+  //   },
+  // ],
   educations: [
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2015',
+      institution: 'Leiden University',
+      degree: 'Ph.D. in Theoretical Physics',
+      from: '2020',
+      to: 'Present',
+    },
+    {
+      institution: 'École Normale Supérieure de Lyon',
+      degree: 'M.Sc. in Theoretical Physics',
+      from: '2017',
       to: '2019',
     },
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2012',
-      to: '2014',
+      institution: 'Lycée du Parc/École Normale Supérieure de Lyon',
+      degree: 'B.Sc. in Math, Physics',
+      from: '2014',
+      to: '2017',
     },
   ],
   publications: [
     {
-      title: 'Publication Title',
+      title: 'Hydrodynamics of a relativistic charged fluid in the presence of a periodically modulated chemical potential',
       conferenceName: '',
-      journalName: 'Journal Name',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
+      journalName: 'Scipost Physics',
+      authors: 'Nicolas Chagnet and Koenraad Schalm',
+      link: 'https://doi.org/10.21468/SciPostPhys.16.1.028',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        'We study charged hydrodynamics in a periodic lattice background. Fluctuations are Bloch waves rather than single momentum Fourier modes. At boundaries of the unit cell where hydrodynamic fluctuations are formally degenerate with their Umklapped copy, level repulsion occurs. Novel mode mixings between charge, sound, and their Umklapped copies appear at finite chemical potential - both at zero and finite momentum. We provide explicit examples for an ionic lattice, i.e. a periodic external chemical potential, and verify our results with numerical computations in fluid-gravity duality.',
     },
     {
-      title: 'Publication Title',
-      conferenceName: 'Conference Name',
-      journalName: '',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
+      title: 'T-linear resistivity, optical conductivity, and Planckian transport for a holographic local quantum critical metal in a periodic potential',
+      conferenceName: '',
+      journalName: 'Physical Review B',
+      authors: 'F. Balm, N. Chagnet, S. Arend, J. Aretz, K. Grosvenor, M. Janse, O. Moors, J. Post, V. Ohanesjan, D. Rodriguez-Fernandez, K. Schalm, and J. Zaanen',
+      link: 'https://doi.org/10.1103/PhysRevB.108.125145',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        'High-Tc cuprate strange metals are characterized by a DC resistivity that scales linearly with T from the onset of superconductivity to the crystal melting temperature, characterized by a current life time τ≃ℏ/(kBT), the “Planckian dissipation”. At the same time, the optical conductivity ceases to be of the Drude form at high temperatures, suggesting a change of the underlying dynamics that surprisingly leaves the T-linear DC resistivity unaffected. We use the AdS/CFT correspondence that describes strongly coupled, densely many-body entangled metallic states of matter to study the DC thermoelectrical transport properties and the optical conductivities of the local quantum critical Gubser-Rocha holographic strange metal in 2+1 dimensions in the presence of a lattice potential, a prime candidate to compare with experiment. We find that the electrical DC resistivity is linear in T at low temperatures for a large range of potential strengths and wave vectors, even as it transitions between different dissipative regimes. At weak lattice potential the optical conductivity evolves as a function of increasing temperature from a Drude form to a “bad metal” characterized by a mid-IR resonance without changing the DC transport, similar to that seen in cuprate strange metals. This mid-IR peak and notably its temperature evolution can be fully understood as a consequence of umklapp hydrodynamics: i.e., hydrodynamic perturbations are Bloch modes in the presence of a lattice. At strong lattice potential an “incoherent metal” is realized instead where momentum conservation no longer plays a role in the transport. We confirm that in this regime the thermal diffusivity appears to be insensitive to the breaking of translations and can be explained by Planckian dissipation originating in universal microscopic chaos. A similar behavior has been found for holographic metals with strong homogeneous momentum relaxation. The charge diffusivity does not submit to this chaos explanation, even though the continuing linear-in-T DC resistivity saturates to an apparent universal slope, numerically equal to a Planckian rate.',
     },
+    {
+      title: 'Quantization and variational problem of the Gubser-Rocha Einstein-Maxwell-Dilaton model, conformal and non-conformal deformations, and its proper thermodynamics',
+      conferenceName: '',
+      journalName: 'Journal of High Energy Physics',
+      authors: 'Nicolas Chagnet, Floris Balm and Koenraad Schalm',
+      link: 'https://doi.org/10.1007/JHEP03(2023)081',
+      description:
+        'We show that the strongly coupled field theory holographically dual to the Gubser-Rocha anti-de-Sitter Einstein-Maxwell-Dilaton theory describes not a single non-trivial AdS2​ IR fixed point, but a one-parameter family. It is dual to a local quantum critical phase instead of a quantum critical point. This result follows from a detailed analysis of the possible quantizations of the gravitational theory that is consistent with the thermodynamics of the analytical Gubser-Rocha black hole solution. The analytic Gubser-Rocha black hole is only a 2-parameter subset of all possible solutions, and we construct other members numerically. These new numerical solutions correspond to turning on an additional scalar charge. Moreover, each solution has multiple holographic interpretations depending on the quantization chosen. In one particular quantization involving a multitrace deformation the scalar charge is a marginal operator. In other quantizations where the marginal multitrace operator is turned off, the analytic Gubser-Rocha black hole does not describe a finite temperature conformal fluid.',
+    },
+    {
+      title: 'Emerging Fermi liquids from regulated quantum electron stars',
+      conferenceName: '',
+      journalName: 'Journal of High Energy Physics',
+      authors: 'Nicolas Chagnet, Vladan Ðukić, Mihailo Čubrović and Koenraad Schalm ',
+      link: 'https://doi.org/10.1007/JHEP08(2022)222',
+      description:
+        'We construct a fully quantum zero-temperature electron star in a soft-wall regulated anti-de-Sitter Einstein-Maxwell-Dirac theory that is thermodynamically stable compared to the Reissner-Nordström black hole. The soft wall only acts on the effective mass of the fermionic degrees of freedom, and allows for a controlled fully backreacted solution. The star is holographically dual to an RG flow where a gapped Fermi liquid starts to emerge from a UV CFT, but decouples again once the effective energy scale becomes lower than the gap of the fermionic degrees of freedom. The RG flow then returns to a non-trivial strongly coupled relativistic fixed point with a holographic dual. Our regulated quantum electron star is thus the fermionic analogue of the Horowitz-Roberts-Gubser-Rocha AdS-to-AdS domain wall solution for the holographic superconductor.',
+    },
+    {
+      title: 'Complexity for Conformal Field Theories in General Dimensions',
+      conferenceName: '',
+      journalName: 'Physical Review Letters',
+      authors: 'Nicolas Chagnet, Shira Chapman, Jan de Boer, and Claire Zukowski',
+      link: 'https://doi.org/10.1103/PhysRevLett.128.051601',
+      description:
+        'We study circuit complexity for conformal field theory states in an arbitrary number of dimensions. Our circuits start from a primary state and move along a unitary representation of the Lorentzian conformal group. Different choices of distance functions can be understood in terms of the geometry of coadjoint orbits of the conformal group. We explicitly relate our circuits to timelike geodesics in anti–de Sitter space and the complexity metric to distances between these geodesics. We extend our method to circuits in other symmetry groups using a group theoretic generalization of the notion of coherent states.',
+    }
   ],
   // Display articles from your medium or dev account. (Optional)
   blog: {
-    source: 'dev', // medium | dev
-    username: 'arifszn', // to hide blog section, keep it empty
-    limit: 2, // How many articles to display. Max is 10.
+    // source: 'dev', // medium | dev
+    // username: 'arifszn', // to hide blog section, keep it empty
+    // limit: 2, // How many articles to display. Max is 10.
   },
-  googleAnalytics: {
-    id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
-  },
+  // googleAnalytics: {
+  //   id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
+  // },
   // Track visitor interaction and behavior. https://www.hotjar.com
-  hotjar: {
-    id: '',
-    snippetVersion: 6,
-  },
+  // hotjar: {
+  //   id: '',
+  //   snippetVersion: 6,
+  // },
   themeConfig: {
-    defaultTheme: 'lofi',
+    defaultTheme: 'nord',
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode
-    disableSwitch: false,
+    disableSwitch: true,
 
     // Should use the prefers-color-scheme media-query,
     // using user system preferences, instead of the hardcoded defaultTheme
@@ -234,11 +265,11 @@ const CONFIG = {
   },
 
   // Optional Footer. Supports plain text or HTML.
-  footer: `Made with <a 
-      class="text-primary" href="https://github.com/arifszn/gitprofile"
-      target="_blank"
-      rel="noreferrer"
-    >GitProfile</a> and ❤️`,
+  // footer: `Made with <a 
+  //     class="text-primary" href="https://github.com/arifszn/gitprofile"
+  //     target="_blank"
+  //     rel="noreferrer"
+  //   >GitProfile</a> and ❤️`,
 
   enablePWA: true,
 };
