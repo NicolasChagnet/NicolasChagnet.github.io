@@ -83,7 +83,7 @@ const CONFIG = {
   },
   resume: {
     fileUrl:
-      'public/nicolas_chagnet_cv.pdf', // Empty fileUrl will hide the `Download Resume` button.
+      'nicolas_chagnet_cv.pdf', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
     'Python',
