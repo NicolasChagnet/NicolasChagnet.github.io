@@ -113,15 +113,21 @@ const CONFIG = {
       from: 'September 2020',
       to: 'Present',
     },
+    {
+      company: 'Leiden University/University of Amsterdam',
+      position: 'Research Intern',
+      from: 'September 2019',
+      to: 'June 2020',
+    },
   ],
-  // certifications: [
-  //   {
-  //     name: 'Lorem ipsum',
-  //     body: 'Lorem ipsum dolor sit amet',
-  //     year: 'March 2022',
-  //     link: 'https://example.com',
-  //   },
-  // ],
+  certifications: [
+    {
+      name: 'Kaggle',
+      body: 'Various course completions',
+      year: '2024',
+      link: 'https://www.kaggle.com/nicolaschagnet',
+    },
+  ],
   educations: [
     {
       institution: 'Leiden University',
