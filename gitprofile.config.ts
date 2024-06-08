@@ -25,7 +25,7 @@ const CONFIG = {
       },
       manual: {
         // Properties for manually specifying projects
-        projects: ['NicolasChagnet/crop-recommendation', 'NicolasChagnet/kaggle-datasets-analysis', 'NicolasChagnet/ising-model-numerics', 'NicolasChagnet/snippy-rs',  'NicolasChagnet/arxiv_scanner_flask'
+        projects: ['NicolasChagnet/crop-recommendation',  'NicolasChagnet/arxiv-recommendations', 'NicolasChagnet/kaggle-datasets-analysis', 'NicolasChagnet/ising-model-numerics', 'NicolasChagnet/snippy-rs',  'NicolasChagnet/arxiv_scanner_flask'
         // , 'NicolasChagnet/zotero-lib-ML'
       ], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
       },
