@@ -25,7 +25,7 @@ const CONFIG = {
       },
       manual: {
         // Properties for manually specifying projects
-        projects: ['NicolasChagnet/arxiv-recommendations', 'NicolasChagnet/pokemon-team-optimizer', 'NicolasChagnet/ising-model-numerics','NicolasChagnet/snippy-rs', 'NicolasChagnet/arxiv_scanner_flask', 'NicolasChagnet/crop-recommendation'
+        projects: ['NicolasChagnet/arxiv-recommendations', 'NicolasChagnet/pokemon-team-optimizer', "NicolasChagnet/energy-demand-forecast", 'NicolasChagnet/ising-model-numerics','NicolasChagnet/snippy-rs', 'NicolasChagnet/arxiv_scanner_flask', 'NicolasChagnet/crop-recommendation'
         // , 'NicolasChagnet/zotero-lib-ML'
       ], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
       },
