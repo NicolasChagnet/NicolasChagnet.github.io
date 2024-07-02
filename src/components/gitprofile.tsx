@@ -66,7 +66,6 @@ const GitProfile = ({ config }: { config: Config }) => {
           headers: { 'Content-Type': 'application/vnd.github.v3+json' },
         });
         const repoData = repoResponse.data;
-
         return repoData.items;
       } else {
         if (sanitizedConfig.projects.github.manual.projects.length === 0) {
