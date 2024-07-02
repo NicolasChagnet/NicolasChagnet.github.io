@@ -140,7 +140,7 @@ const CONFIG = {
       institution: 'Leiden University',
       degree: 'Ph.D. in Theoretical Physics',
       from: '2020',
-      to: 'Present',
+      to: '2024',
     },
     {
       institution: 'École Normale Supérieure de Lyon',
