@@ -162,7 +162,7 @@ const CONFIG = {
       authors: 'Nicolas Chagnet and Koenraad Schalm',
       link: 'https://doi.org/10.21468/SciPostPhys.16.1.028',
       description:
-        'We study charged hydrodynamics in a periodic lattice background. Fluctuations are Bloch waves rather than single momentum Fourier modes. At boundaries of the unit cell where hydrodynamic fluctuations are formally degenerate with their Umklapped copy, level repulsion occurs. Novel mode mixings between charge, sound, and their Umklapped copies appear at finite chemical potential - both at zero and finite momentum. We provide explicit examples for an ionic lattice, i.e. a periodic external chemical potential, and verify our results with numerical computations in fluid-gravity duality.',
+        '',
     },
     {
       title: 'T-linear resistivity, optical conductivity, and Planckian transport for a holographic local quantum critical metal in a periodic potential',
@@ -171,7 +171,7 @@ const CONFIG = {
       authors: 'F. Balm, N. Chagnet, S. Arend, J. Aretz, K. Grosvenor, M. Janse, O. Moors, J. Post, V. Ohanesjan, D. Rodriguez-Fernandez, K. Schalm, and J. Zaanen',
       link: 'https://doi.org/10.1103/PhysRevB.108.125145',
       description:
-        'High-Tc cuprate strange metals are characterized by a DC resistivity that scales linearly with T from the onset of superconductivity to the crystal melting temperature, characterized by a current life time τ≃ℏ/(kBT), the “Planckian dissipation”. At the same time, the optical conductivity ceases to be of the Drude form at high temperatures, suggesting a change of the underlying dynamics that surprisingly leaves the T-linear DC resistivity unaffected. We use the AdS/CFT correspondence that describes strongly coupled, densely many-body entangled metallic states of matter to study...',
+        '',
     },
     {
       title: 'Quantization and variational problem of the Gubser-Rocha Einstein-Maxwell-Dilaton model, conformal and non-conformal deformations, and its proper thermodynamics',
@@ -180,7 +180,7 @@ const CONFIG = {
       authors: 'Nicolas Chagnet, Floris Balm and Koenraad Schalm',
       link: 'https://doi.org/10.1007/JHEP03(2023)081',
       description:
-        'We show that the strongly coupled field theory holographically dual to the Gubser-Rocha anti-de-Sitter Einstein-Maxwell-Dilaton theory describes not a single non-trivial AdS2​ IR fixed point, but a one-parameter family. It is dual to a local quantum critical phase instead of a quantum critical point. This result follows from a detailed analysis of the possible quantizations of the gravitational theory that is consistent with the thermodynamics of the analytical Gubser-Rocha black hole solution...',
+        '',
     },
     {
       title: 'Emerging Fermi liquids from regulated quantum electron stars',
@@ -189,7 +189,7 @@ const CONFIG = {
       authors: 'Nicolas Chagnet, Vladan Ðukić, Mihailo Čubrović and Koenraad Schalm ',
       link: 'https://doi.org/10.1007/JHEP08(2022)222',
       description:
-        'We construct a fully quantum zero-temperature electron star in a soft-wall regulated anti-de-Sitter Einstein-Maxwell-Dirac theory that is thermodynamically stable compared to the Reissner-Nordström black hole. The soft wall only acts on the effective mass of the fermionic degrees of freedom, and allows for a controlled fully backreacted solution. The star is holographically dual to an RG flow where a gapped Fermi liquid starts to emerge from a UV CFT, but decouples again once the effective energy scale becomes lower than the gap of the fermionic degrees of freedom. The RG flow then returns to a non-trivial strongly coupled relativistic fixed point with a holographic dual. Our regulated quantum electron star is thus the fermionic analogue of the Horowitz-Roberts-Gubser-Rocha AdS-to-AdS domain wall solution for the holographic superconductor.',
+        '',
     },
     {
       title: 'Complexity for Conformal Field Theories in General Dimensions',
@@ -198,7 +198,7 @@ const CONFIG = {
       authors: 'Nicolas Chagnet, Shira Chapman, Jan de Boer, and Claire Zukowski',
       link: 'https://doi.org/10.1103/PhysRevLett.128.051601',
       description:
-        'We study circuit complexity for conformal field theory states in an arbitrary number of dimensions. Our circuits start from a primary state and move along a unitary representation of the Lorentzian conformal group. Different choices of distance functions can be understood in terms of the geometry of coadjoint orbits of the conformal group. We explicitly relate our circuits to timelike geodesics in anti–de Sitter space and the complexity metric to distances between these geodesics. We extend our method to circuits in other symmetry groups using a group theoretic generalization of the notion of coherent states.',
+        '',
     }
   ],
   // Display articles from your medium or dev account. (Optional)
