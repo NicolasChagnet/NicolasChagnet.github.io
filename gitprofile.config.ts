@@ -31,7 +31,7 @@ const CONFIG = {
           'NicolasChagnet/energy-demand-forecast', 
           'NicolasChagnet/ising-model-numerics',
           'NicolasChagnet/snippy-rs', 
-          'NicolasChagnet/arxiv_scanner_flask'
+          'NicolasChagnet/arxiv-scanner-flask'
         // , 'NicolasChagnet/zotero-lib-ML'
       ], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
       },
