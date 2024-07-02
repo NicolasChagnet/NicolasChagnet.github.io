@@ -3,6 +3,7 @@
 const CONFIG = {
   github: {
     username: 'NicolasChagnet', // Your GitHub org/user name. (This is the only required config)
+    title: 'Postdoctoral researcher | Junior data scientist'
   },
   /**
    * If you are deploying to https://<USERNAME>.github.io/, for example your repository is at https://github.com/arifszn/arifszn.github.io, set base to '/'.
@@ -163,6 +164,7 @@ const CONFIG = {
       link: 'https://doi.org/10.21468/SciPostPhys.16.1.028',
       description:
         '',
+      pdf_link: 'https://arxiv.org/pdf/2303.17685'
     },
     {
       title: 'T-linear resistivity, optical conductivity, and Planckian transport for a holographic local quantum critical metal in a periodic potential',
@@ -172,6 +174,7 @@ const CONFIG = {
       link: 'https://doi.org/10.1103/PhysRevB.108.125145',
       description:
         '',
+      pdf_link: 'https://arxiv.org/pdf/2211.05492'
     },
     {
       title: 'Quantization and variational problem of the Gubser-Rocha Einstein-Maxwell-Dilaton model, conformal and non-conformal deformations, and its proper thermodynamics',
@@ -181,6 +184,7 @@ const CONFIG = {
       link: 'https://doi.org/10.1007/JHEP03(2023)081',
       description:
         '',
+      pdf_link: 'https://arxiv.org/pdf/2209.13951'
     },
     {
       title: 'Emerging Fermi liquids from regulated quantum electron stars',
@@ -190,6 +194,7 @@ const CONFIG = {
       link: 'https://doi.org/10.1007/JHEP08(2022)222',
       description:
         '',
+      pdf_link: 'https://arxiv.org/pdf/2204.10092'
     },
     {
       title: 'Complexity for Conformal Field Theories in General Dimensions',
@@ -199,6 +204,7 @@ const CONFIG = {
       link: 'https://doi.org/10.1103/PhysRevLett.128.051601',
       description:
         '',
+      pdf_link: 'https://arxiv.org/pdf/2103.06920'
     }
   ],
   // Display articles from your medium or dev account. (Optional)

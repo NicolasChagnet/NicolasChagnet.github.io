@@ -1,5 +1,6 @@
 export interface SanitizedGithub {
   username: string;
+  title: string;
 }
 
 export interface SanitizedGitHubProjects {
@@ -97,6 +98,7 @@ export interface SanitizedPublication {
   journalName?: string;
   authors?: string;
   link?: string;
+  pdf_link?: string;
   description?: string;
 }
 

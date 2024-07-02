@@ -75,19 +75,16 @@ const PublicationCard = ({
 
   const renderPublications = () => {
     return publications.map((item, index) => (
-      <a
-        className="card shadow-lg compact bg-base-100 cursor-pointer"
+      <div
+        className="card shadow-lg compact bg-base-100"
         key={index}
-        href={item.link}
-        target="_blank"
-        rel="noreferrer"
       >
         <div className="p-8 h-full w-full">
           <div className="flex items-center flex-col">
             <div className="w-full">
               <div className="px-4">
-                <div className="text-center w-full">
-                  <h2 className="font-medium opacity-60 mb-2">{item.title}</h2>
+                <div className="text-left w-full">
+                  <h2 className="font-medium text-lg opacity-60 mb-2">{item.title}</h2>
                   {item.conferenceName && (
                     <p className="text-base-content opacity-50 text-sm">
                       {item.conferenceName}
@@ -95,12 +92,12 @@ const PublicationCard = ({
                   )}
                   {item.journalName && (
                     <p className="text-base-content opacity-50 text-sm">
-                      {item.journalName}
+                      <span className="font-bold">Journal:</span> <a href={item.link} target="_blank" rel="noreferrer" className='underline'>{item.journalName}</a>
                     </p>
                   )}
                   {item.authors && (
                     <p className="text-base-content opacity-50 text-sm">
-                      Authors: {item.authors}
+                      <span className="font-bold">Authors:</span> {item.authors}
                     </p>
                   )}
                   {item.description && (
@@ -108,12 +105,20 @@ const PublicationCard = ({
                       {item.description}
                     </p>
                   )}
+                  <div>
+                    <a href={item.pdf_link} target="_blank" rel="noreferrer" className="btn btn-outline btn-sm text-xs mt-1 opacity-50 float-right">
+                      Download PDF 
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="size-6 ml-0.5 h-4">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                      </svg>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </a>
+      </div>
     ));
   };
 
@@ -136,7 +141,7 @@ const PublicationCard = ({
                   </h5>
                 </div>
                 <div className="col-span-2">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="grid grid-auto-rows md:grid-auto-rows gap-6">
                     {loading ? renderSkeleton() : renderPublications()}
                   </div>
                 </div>

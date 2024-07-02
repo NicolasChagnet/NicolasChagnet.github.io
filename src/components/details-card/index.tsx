@@ -66,8 +66,8 @@ const ListItem: React.FC<{
   skeleton?: boolean;
 }> = ({ icon, title, value, link, skeleton = false }) => {
   return (
-    <div className="flex justify-start py-2 px-1 items-center">
-      <div className="flex-grow font-medium gap-2 flex items-center my-1">
+    <div className="flex justify-start py-1 px-1 items-center">
+      <div className="flex-grow font-medium gap-2 flex items-center my-0">
         {icon} {title}
       </div>
       <div
@@ -125,7 +125,7 @@ const OrganizationItem: React.FC<{
 
   return (
     <div className="flex justify-start py-2 px-1 items-center">
-      <div className="flex-grow font-medium gap-2 flex items-center my-1">
+      <div className="flex-grow font-medium gap-2 flex items-center my-0">
         {icon} {title}
       </div>
       <div

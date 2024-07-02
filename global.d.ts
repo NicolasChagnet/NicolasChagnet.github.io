@@ -3,6 +3,7 @@ interface Github {
    * GitHub org/user name
    */
   username: string;
+  title: string;
 }
 
 interface GitHubProjects {
@@ -244,6 +245,7 @@ interface Publication {
   authors?: string;
   link?: string;
   description?: string;
+  pdf_link: string;
 }
 
 interface GoogleAnalytics {
