@@ -77,13 +77,12 @@ const GitProfile = ({ config }: { config: Config }) => {
           .join('');
 
         const url = `https://api.github.com/search/repositories?q=${repos}&type=Repositories`;
-
         const repoResponse = await axios.get(url, {
           headers: { 'Content-Type': 'application/vnd.github.v3+json' },
         });
         const repoData = repoResponse.data;
-
-        return repoData.items;
+        const repoDataItems = repoData.items.slice().sort((a: any, b: any) => sanitizedConfig.projects.github.manual.projects.indexOf(a.full_name) - sanitizedConfig.projects.github.manual.projects.indexOf(b.full_name));
+        return repoDataItems;
       }
     },
     [
