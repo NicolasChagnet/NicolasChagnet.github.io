@@ -3,6 +3,7 @@ import { AiOutlineFork, AiOutlineStar } from 'react-icons/ai';
 import { MdInsertLink } from 'react-icons/md';
 import { ga, getLanguageColor, skeleton } from '../../utils';
 import { GithubProject } from '../../interfaces/github-project';
+import { SanitizedGitHubProjects } from '../../interfaces/sanitized-config';
 
 const GithubProjectCard = ({
   header,
@@ -11,6 +12,7 @@ const GithubProjectCard = ({
   limit,
   username,
   googleAnalyticsId,
+  demos
 }: {
   header: string;
   githubProjects: GithubProject[];
@@ -18,6 +20,7 @@ const GithubProjectCard = ({
   limit: number;
   username: string;
   googleAnalyticsId?: string;
+  demos: Array<string>;
 }) => {
   if (!loading && githubProjects.length === 0) {
     return;
@@ -75,32 +78,43 @@ const GithubProjectCard = ({
 
   const renderProjects = () => {
     return githubProjects.map((item, index) => (
-      <a
-        className="card shadow-lg compact bg-base-100 cursor-pointer"
-        href={item.html_url}
-        key={index}
-        onClick={(e) => {
-          e.preventDefault();
-
-          try {
-            if (googleAnalyticsId) {
-              ga.event('Click project', {
-                project: item.name,
-              });
-            }
-          } catch (error) {
-            console.error(error);
-          }
-
-          window?.open(item.html_url, '_blank');
-        }}
+      <div
+        className="card shadow-lg compact bg-base-100"
       >
         <div className="flex justify-between flex-col p-8 h-full w-full">
           <div>
             <div className="flex items-center truncate">
               <div className="card-title text-lg tracking-wide flex text-base-content opacity-60">
                 <MdInsertLink className="my-auto" />
-                <span>{item.name}</span>
+                <a href={item.html_url}
+                  key={index}
+                  onClick={(e) => {
+                    e.preventDefault();
+
+                    try {
+                      if (googleAnalyticsId) {
+                        ga.event('Click project', {
+                          project: item.name,
+                        });
+                      }
+                    } catch (error) {
+                      console.error(error);
+                    }
+
+                    window?.open(item.html_url, '_blank');
+                  }}
+                  className='compact'
+                >
+                  <span>{item.name}</span>
+                </a>
+                {demos.length > 0 && demos[index].length > 0 ? 
+                  <a href={demos[index]}
+                  key={index}
+                  className='compact'
+                >
+                  <span className='text-gray-600 underline font-medium'>[DEMO]</span>
+                </a> : ''
+                }
               </div>
             </div>
             <p className="mb-5 mt-1 text-base-content text-opacity-60 text-sm">
@@ -136,7 +150,7 @@ const GithubProjectCard = ({
             </div>
           </div>
         </div>
-      </a>
+      </div>
     ));
   };
 

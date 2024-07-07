@@ -64,6 +64,7 @@ interface GitHubProjects {
      * example: ['my-project1', 'my-project2']
      */
     projects?: Array<string>;
+    projects_demos?: Array<string>;
   };
 }
 

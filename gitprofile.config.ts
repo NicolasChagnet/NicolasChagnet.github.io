@@ -33,8 +33,16 @@ const CONFIG = {
           'NicolasChagnet/ising-model-numerics',
           'NicolasChagnet/snippy-rs', 
           'NicolasChagnet/arxiv-scanner-flask'
-        // , 'NicolasChagnet/zotero-lib-ML'
-      ], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
+          // , 'NicolasChagnet/zotero-lib-ML'
+        ], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
+        projects_demos: [
+          '', 
+          'https://pokemon-team-optimizer.streamlit.app/', 
+          'https://energy-demand-forecast-france.streamlit.app/', 
+          '',
+          '', 
+          ''
+        ]
       },
     },
     external: {

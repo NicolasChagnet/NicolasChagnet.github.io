@@ -49,6 +49,7 @@ export const getSanitizedConfig = (
           },
           manual: {
             projects: config?.projects?.github?.manual?.projects || [],
+            projects_demos: config?.projects?.github?.manual?.projects_demos || [],
           },
         },
         external: {

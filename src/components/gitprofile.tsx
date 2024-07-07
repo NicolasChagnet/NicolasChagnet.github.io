@@ -229,16 +229,16 @@ const GitProfile = ({ config }: { config: Config }) => {
                         experiences={sanitizedConfig.experiences}
                       />
                     )}
-                    {sanitizedConfig.certifications.length !== 0 && (
-                      <CertificationCard
-                        loading={loading}
-                        certifications={sanitizedConfig.certifications}
-                      />
-                    )}
                     {sanitizedConfig.educations.length !== 0 && (
                       <EducationCard
                         loading={loading}
                         educations={sanitizedConfig.educations}
+                      />
+                    )}
+                    {sanitizedConfig.certifications.length !== 0 && (
+                      <CertificationCard
+                        loading={loading}
+                        certifications={sanitizedConfig.certifications}
                       />
                     )}
                   </div>
@@ -253,6 +253,7 @@ const GitProfile = ({ config }: { config: Config }) => {
                         loading={loading}
                         username={sanitizedConfig.github.username}
                         googleAnalyticsId={sanitizedConfig.googleAnalytics.id}
+                        demos={sanitizedConfig.projects.github.manual.projects_demos}
                       />
                     )}
                     {sanitizedConfig.publications.length !== 0 && (
