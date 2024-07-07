@@ -168,7 +168,7 @@ const CONFIG = {
       title: 'Hydrodynamics of a relativistic charged fluid in the presence of a periodically modulated chemical potential',
       conferenceName: '',
       journalName: 'Scipost Physics (2024)',
-      authors: 'Nicolas Chagnet and Koenraad Schalm',
+      authors: 'N. Chagnet and K. Schalm',
       link: 'https://doi.org/10.21468/SciPostPhys.16.1.028',
       description:
         '',
@@ -188,7 +188,7 @@ const CONFIG = {
       title: 'Quantization and variational problem of the Gubser-Rocha Einstein-Maxwell-Dilaton model, conformal and non-conformal deformations, and its proper thermodynamics',
       conferenceName: '',
       journalName: 'Journal of High Energy Physics',
-      authors: 'Nicolas Chagnet, Floris Balm and Koenraad Schalm',
+      authors: 'N. Chagnet, F. Balm and K. Schalm',
       link: 'https://doi.org/10.1007/JHEP03(2023)081',
       description:
         '',
@@ -198,7 +198,7 @@ const CONFIG = {
       title: 'Emerging Fermi liquids from regulated quantum electron stars',
       conferenceName: '',
       journalName: 'Journal of High Energy Physics',
-      authors: 'Nicolas Chagnet, Vladan Ðukić, Mihailo Čubrović and Koenraad Schalm ',
+      authors: 'N. Chagnet, V. Ðukić, M. Čubrović and K. Schalm ',
       link: 'https://doi.org/10.1007/JHEP08(2022)222',
       description:
         '',
@@ -208,7 +208,7 @@ const CONFIG = {
       title: 'Complexity for Conformal Field Theories in General Dimensions',
       conferenceName: '',
       journalName: 'Physical Review Letters',
-      authors: 'Nicolas Chagnet, Shira Chapman, Jan de Boer, and Claire Zukowski',
+      authors: 'N. Chagnet, S. Chapman, J. de Boer and C. Zukowski',
       link: 'https://doi.org/10.1103/PhysRevLett.128.051601',
       description:
         '',
