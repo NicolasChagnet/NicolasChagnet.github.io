@@ -38,7 +38,7 @@ const CONFIG = {
         projects_demos: [
           '', 
           'https://pokemon-team-optimizer.streamlit.app/', 
-          'https://energy-demand-forecast-france.streamlit.app/', 
+          'https://nicolaschagnet.github.io/energy-demand-forecast/', 
           '',
           '', 
           ''
