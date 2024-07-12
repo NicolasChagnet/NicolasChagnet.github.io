@@ -144,7 +144,7 @@ const GithubProjectCard = ({
           <div className="flex flex-wrap justify-between text-sm text-base-content text-opacity-60 truncate">
             <div>
               <span className="flex flex-wrap items-center">
-                {item.topics.map((topic) => <div className="m-1 topic-button rounded-md badge-primary px-3 py-1 bg-opacity-80 text-xs leading-sm text-white font-bold capitalize" key={topic}>{topic.replace("-", " ")} </div>)}
+                {item.topics.map((topic) => <div className="m-1 topic-button rounded-md badge-primary px-3 py-1 bg-opacity-80 text-xs leading-sm text-white font-bold capitalize" key={topic}>{topic.replace(/\-/g, " ")} </div>)}
               </span>
             </div>
           </div>
