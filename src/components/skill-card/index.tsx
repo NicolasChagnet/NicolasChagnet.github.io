@@ -21,7 +21,7 @@ const SkillCard = ({
   };
 
   return (
-    <div className="card shadow-lg compact bg-base-100">
+    <div className="card compact">
       <div className="card-body">
         <div className="mx-3">
           <h5 className="card-title">
@@ -39,7 +39,7 @@ const SkillCard = ({
               : skills.map((skill, index) => (
                   <div
                     key={index}
-                    className="m-1 text-xs inline-flex items-center font-bold leading-sm px-3 py-1 badge-primary bg-opacity-100 rounded-md text-white"
+                    className="m-1 text-xs inline-flex items-center font-bold leading-sm px-3 py-1 badge-primary bg-opacity-5 bg-opacity-100 rounded-md text-primary"
                   >
                     {skill}
                   </div>

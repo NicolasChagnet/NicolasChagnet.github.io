@@ -230,7 +230,7 @@ const CONFIG = {
   //   snippetVersion: 6,
   // },
   themeConfig: {
-    defaultTheme: 'nord',
+    defaultTheme: 'procyon',
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode
@@ -282,13 +282,14 @@ const CONFIG = {
 
     // Custom theme, applied to `procyon` theme
     customTheme: {
-      primary: '#fc055b',
+      primary: '#353bf7',
       secondary: '#219aaf',
-      accent: '#e8d03a',
+      accent: '#fffff',
       neutral: '#2A2730',
-      'base-100': '#E3E3ED',
-      '--rounded-box': '3rem',
-      '--rounded-btn': '3rem',
+      'base-100': '#ffffff',
+      'base-200': '#f9fafb',
+      '--rounded-box': '1rem',
+      '--rounded-btn': '1rem',
     },
   },
 

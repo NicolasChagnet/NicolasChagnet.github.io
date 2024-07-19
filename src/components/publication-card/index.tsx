@@ -76,7 +76,7 @@ const PublicationCard = ({
   const renderPublications = () => {
     return publications.map((item, index) => (
       <div
-        className="card shadow-lg compact bg-base-100"
+        className="card compact"
         key={index}
       >
         <div className="p-8 h-full w-full">
@@ -106,7 +106,7 @@ const PublicationCard = ({
                     </p>
                   )}
                   <div>
-                    <a href={item.pdf_link} target="_blank" rel="noreferrer" className="btn btn-outline btn-sm text-xs mt-1 opacity-50 float-right">
+                    <a href={item.pdf_link} target="_blank" rel="noreferrer" className="btn btn-outline btn-sm text-xs mt-1 opacity-80 float-right text-primary hover:bg-primary hover:border-transparent rounded-sm">
                       Download PDF 
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="size-6 ml-0.5 h-4">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />

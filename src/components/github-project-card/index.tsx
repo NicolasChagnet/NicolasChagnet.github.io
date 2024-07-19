@@ -29,7 +29,7 @@ const GithubProjectCard = ({
     const array = [];
     for (let index = 0; index < limit; index++) {
       array.push(
-        <div className="card shadow-lg compact bg-base-100" key={index}>
+        <div className="compact bg-base-100" key={"main_" + index}>
           <div className="flex justify-between flex-col p-8 h-full w-full">
             <div>
               <div className="flex items-center">
@@ -78,7 +78,7 @@ const GithubProjectCard = ({
   const renderProjects = () => {
     return githubProjects.map((item, index) => (
       <div
-        className="card shadow-lg compact bg-base-100"
+        className="compact bg-base-100" key={item.name}
       >
         <div className="flex justify-between flex-col p-8 h-full w-full">
           <div>
@@ -86,7 +86,7 @@ const GithubProjectCard = ({
               <div className="card-title text-lg tracking-wide flex text-base-content opacity-60">
                 <MdInsertLink className="my-auto" />
                 <a href={item.html_url}
-                  key={index}
+                  // key={"html_" + index}
                   onClick={(e) => {
                     e.preventDefault();
 
@@ -108,7 +108,7 @@ const GithubProjectCard = ({
                 </a>
                 {demos.length > 0 && demos[index].length > 0 ? 
                   <a href={demos[index]}
-                  key={index}
+                  // key={"demo_" + index}
                   className='compact'
                 >
                   <span className='text-gray-600 underline font-medium'>[DEMO]</span>
@@ -144,7 +144,7 @@ const GithubProjectCard = ({
           <div className="flex flex-wrap justify-between text-sm text-base-content text-opacity-60 truncate">
             <div>
               <span className="flex flex-wrap items-center">
-                {item.topics.map((topic) => <div className="m-1 topic-button rounded-md badge-primary px-3 py-1 bg-opacity-80 text-xs leading-sm text-white font-bold capitalize" key={topic}>{topic.replace(/\-/g, " ")} </div>)}
+                {item.topics.map((topic) => <div className="m-1 topic-button rounded-md badge-primary px-3 py-1 bg-opacity-5 text-xs leading-sm text-primary font-bold capitalize" key={item.name + "_" + topic}>{topic.replace(/\-/g, " ")} </div>)}
               </span>
             </div>
           </div>

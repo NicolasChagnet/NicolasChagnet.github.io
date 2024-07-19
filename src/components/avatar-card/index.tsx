@@ -28,7 +28,7 @@ const AvatarCard: React.FC<AvatarCardProps> = ({
   title
 }): JSX.Element => {
   return (
-    <div className="card shadow-lg compact bg-base-100">
+    <div className="card compact bg-base-200">
       <div className="grid place-items-center py-8">
         {loading || !profile ? (
           <div className="avatar opacity-90">
@@ -91,7 +91,7 @@ const AvatarCard: React.FC<AvatarCardProps> = ({
             <a
               href={resumeFileUrl}
               target="_blank"
-              className="btn btn-outline btn-sm text-xs mt-6 opacity-50"
+              className="btn btn-outline btn-sm text-xs mt-6 opacity-80 text-primary hover:bg-primary hover:border-transparent rounded-sm"
               download
               rel="noreferrer"
             >
