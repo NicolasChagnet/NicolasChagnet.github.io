@@ -254,6 +254,7 @@ const GitProfile = ({ config }: { config: Config }) => {
                         username={sanitizedConfig.github.username}
                         googleAnalyticsId={sanitizedConfig.googleAnalytics.id}
                         demos={sanitizedConfig.projects.github.manual.projects_demos}
+                        previews={sanitizedConfig.projects.github.manual.projects_previews}
                       />
                     )}
                     {sanitizedConfig.publications.length !== 0 && (

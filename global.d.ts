@@ -65,6 +65,7 @@ interface GitHubProjects {
      */
     projects?: Array<string>;
     projects_demos?: Array<string>;
+    projects_previews?: Array<string>;
   };
 }
 

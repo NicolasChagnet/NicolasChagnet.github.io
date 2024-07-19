@@ -11,7 +11,8 @@ const GithubProjectCard = ({
   limit,
   username,
   googleAnalyticsId,
-  demos
+  demos,
+  previews
 }: {
   header: string;
   githubProjects: GithubProject[];
@@ -20,6 +21,7 @@ const GithubProjectCard = ({
   username: string;
   googleAnalyticsId?: string;
   demos: Array<string>;
+  previews: Array<string>;
 }) => {
   if (!loading && githubProjects.length === 0) {
     return;
@@ -109,15 +111,20 @@ const GithubProjectCard = ({
                 {demos.length > 0 && demos[index].length > 0 ? 
                   <a href={demos[index]}
                   // key={"demo_" + index}
-                  className='compact'
+                  className=' py-1 px-1 compact text-xs text-gray-600 hover:bg-gray-600 hover:text-base-100 hover:border-transparent rounded-sm'
                 >
-                  <span className='text-gray-600 underline font-medium'>[DEMO]</span>
+                  DEMO
                 </a> : ''
                 }
               </div>
             </div>
             <p className="mb-5 mt-1 text-base-content text-opacity-60 text-sm">
               {item.description}
+              {previews.length > 0 && previews[index].length > 0 ? 
+                  <img src={previews[index]}
+                  // key={"demo_" + index}
+                  className='compact mt-4' /> : ''
+              }
             </p>
           </div>
           <div className="flex justify-between text-sm text-base-content text-opacity-60 truncate">

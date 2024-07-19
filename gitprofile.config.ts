@@ -42,6 +42,16 @@ const CONFIG = {
           '',
           '', 
           ''
+        ],
+        projects_previews: [
+          // 'https://github.com/NicolasChagnet/arxiv-recommendations/blob/main/figs/frequency_title_words_bigram.png?raw=True',
+          '',
+          '',
+          // 'https://github.com/NicolasChagnet/energy-demand-forecast/blob/main/figs/plot_demo.png?raw=True',
+          '',
+          '',
+          '',
+          ''
         ]
       },
     },
