@@ -85,7 +85,7 @@ const GithubProjectCard = ({
         <div className="flex justify-between flex-col p-4 h-full w-full">
           <div>
             <div className="flex items-center truncate">
-              <div className="card-title text-lg tracking-wide flex text-base-content opacity-60">
+              <div className="card-title text-lg tracking-wide flex text-base-content opacity-60 self-start">
                 <MdInsertLink className="my-auto" />
                 <a href={item.html_url}
                   // key={"html_" + index}
@@ -124,11 +124,19 @@ const GithubProjectCard = ({
             </p>
             </div>
           </div>
-          <div className='grow mb-4 active:scale-[2] active:z-[100] cursor-zoom-in'>
+          {/* <div className='grow mb-4 active:scale-[2] active:z-[100] cursor-zoom-in mx-auto'>
             {previews.length > 0 && previews[index].length > 0 ? 
               <img src={previews[index]}
               // key={"demo_" + index}
               className='mt-4  border-primary border-opacity-60 border-solid border-2 rounded-lg' /> : ''
+            }
+          </div> */}
+          <div className='grow mb-4 mx-auto'>
+            {previews.length > 0 && previews[index].length > 0 ? 
+              <a href={previews[index]} target="_blank">
+              <img src={previews[index]}
+              // key={"demo_" + index}
+              className='mt-4  border-primary border-opacity-60 border-solid border-2 rounded-lg' /></a> : ''
             }
           </div>
           <div className="flex justify-between text-sm text-base-content text-opacity-60 truncate">

@@ -82,7 +82,7 @@ const ListItem: React.FC<{
           href={link}
           target="_blank"
           rel="noreferrer"
-          className="flex justify-start py-2 px-1 items-center"
+          className="flex justify-start py-2 px-1 items-center decoration-dotted decoration-1 underline underline-offset-2"
         >
           {value}
         </a>
