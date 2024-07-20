@@ -64,7 +64,7 @@ const ListItem: React.FC<{
   value: React.ReactNode;
   link?: string;
   skeleton?: boolean;
-}> = ({ icon, title, value, link, skeleton = false }) => {
+}> = ({ icon, title, value, link='', skeleton = false }) => {
   return (
     <div className="flex justify-start py-1 px-1 items-center">
       <div className="flex-grow font-medium gap-2 flex items-center my-0">
@@ -78,6 +78,7 @@ const ListItem: React.FC<{
           wordBreak: 'break-word',
         }}
       >
+        { link.length > 0 ?
         <a
           href={link}
           target="_blank"
@@ -85,7 +86,8 @@ const ListItem: React.FC<{
           className="flex justify-start py-2 px-1 items-center decoration-dotted decoration-1 underline underline-offset-2"
         >
           {value}
-        </a>
+        </a> : value
+        }
       </div>
     </div>
   );
