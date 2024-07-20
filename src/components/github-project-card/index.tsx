@@ -80,9 +80,9 @@ const GithubProjectCard = ({
   const renderProjects = () => {
     return githubProjects.map((item, index) => (
       <div
-        className="compact bg-base-100" key={item.name}
+        className="card compact bg-base-100" key={item.name}
       >
-        <div className="flex justify-between flex-col p-8 h-full w-full">
+        <div className="flex justify-between flex-col p-4 h-full w-full">
           <div>
             <div className="flex items-center truncate">
               <div className="card-title text-lg tracking-wide flex text-base-content opacity-60">
@@ -118,14 +118,18 @@ const GithubProjectCard = ({
                 }
               </div>
             </div>
-            <p className="mb-5 mt-1 text-base-content text-opacity-60 text-sm">
+            <div className='flex'>
+            <p className="mb-5 mt-1 text-base-content text-opacity-60 text-sm grow">
               {item.description}
-              {previews.length > 0 && previews[index].length > 0 ? 
-                  <img src={previews[index]}
-                  // key={"demo_" + index}
-                  className='compact mt-4' /> : ''
-              }
             </p>
+            </div>
+          </div>
+          <div className='grow mb-4 active:scale-[2] active:z-[100] cursor-zoom-in'>
+            {previews.length > 0 && previews[index].length > 0 ? 
+              <img src={previews[index]}
+              // key={"demo_" + index}
+              className='mt-4  border-primary border-opacity-60 border-solid border-2 rounded-lg' /> : ''
+            }
           </div>
           <div className="flex justify-between text-sm text-base-content text-opacity-60 truncate">
             <div className="flex flex-grow">
@@ -163,7 +167,7 @@ const GithubProjectCard = ({
   return (
     <Fragment>
       <div className="col-span-1 lg:col-span-2">
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid grid-cols-2 gap-2">
           <div className="col-span-2">
             <div className="card compact bg-base-100 shadow bg-opacity-40">
               <div className="card-body">

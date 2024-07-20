@@ -79,10 +79,10 @@ const PublicationCard = ({
         className="card compact"
         key={index}
       >
-        <div className="p-8 h-full w-full">
+        <div className="p-4 h-full w-full">
           <div className="flex items-center flex-col">
             <div className="w-full">
-              <div className="px-4">
+              <div className="px-0">
                 <div className="text-left w-full">
                   <h2 className="font-medium text-lg opacity-60 mb-2">{item.title}</h2>
                   {item.conferenceName && (
@@ -125,7 +125,7 @@ const PublicationCard = ({
   return (
     <Fragment>
       <div className="col-span-1 lg:col-span-2">
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid grid-cols-2 gap-4">
           <div className="col-span-2">
             <div className="card compact bg-base-100 shadow bg-opacity-40">
               <div className="card-body">
