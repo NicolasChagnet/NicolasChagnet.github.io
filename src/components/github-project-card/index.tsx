@@ -131,42 +131,50 @@ const GithubProjectCard = ({
               className='mt-4  border-primary border-opacity-60 border-solid border-2 rounded-lg' /> : ''
             }
           </div> */}
-          <div className='grow mb-4 mx-auto'>
-            {previews.length > 0 && previews[index].length > 0 ? 
+          
+            {previews.length > 0 && previews[index].length > 0 ?
+            <div className='grow mb-4 mx-auto'> 
               <a href={previews[index]} target="_blank">
               <img src={previews[index]}
               // key={"demo_" + index}
-              className='mt-4  border-primary border-opacity-60 border-solid border-2 rounded-lg' /></a> : ''
+              className='mt-4  border-primary border-opacity-60 border-solid border-2 rounded-lg' /></a>
+          </div> : ''
             }
-          </div>
-          <div className="flex justify-between text-sm text-base-content text-opacity-60 truncate">
-            <div className="flex flex-grow">
-              <span className="mr-3 flex items-center">
-                <AiOutlineStar className="mr-0.5" />
-                <span>{item.stargazers_count}</span>
-              </span>
-              <span className="flex items-center">
-                <AiOutlineFork className="mr-0.5" />
-                <span>{item.forks_count}</span>
-              </span>
+          <div className='flex flex-col justify-between'>
+            {/* <div className="flex justify-between text-sm text-base-content text-opacity-60 truncate">
+              <div className="flex flex-grow">
+                <span className="mr-3 flex items-center">
+                  <AiOutlineStar className="mr-0.5" />
+                  <span>{item.stargazers_count}</span>
+                </span>
+                <span className="flex items-center">
+                  <AiOutlineFork className="mr-0.5" />
+                  <span>{item.forks_count}</span>
+                </span>
+              </div>
+              <div>
+                <span className="flex items-center">
+                  <div
+                    className="w-3 h-3 rounded-full mr-1 opacity-60"
+                    style={{ backgroundColor: getLanguageColor(item.language) }}
+                  />
+                  <span>{item.language}</span>
+                </span>
+              </div>
+            </div> */}
+            <div className="flex flex-wrap justify-between text-sm text-base-content text-opacity-60 truncate">
+              <div className='justify-self-start'>
+                <span className="flex flex-wrap items-center">
+                  {item.topics.map((topic) => <div className="m-1 topic-button rounded-md badge-primary px-3 py-1 bg-opacity-5 text-xs leading-sm text-primary font-bold" key={item.name + "_" + topic}>{
+                  topic.replace(/\-/g, " ")
+                  } </div>)}
+                </span>
+              </div>
             </div>
-            <div>
-              <span className="flex items-center">
-                <div
-                  className="w-3 h-3 rounded-full mr-1 opacity-60"
-                  style={{ backgroundColor: getLanguageColor(item.language) }}
-                />
-                <span>{item.language}</span>
-              </span>
-            </div>
           </div>
-          <div className="flex flex-wrap justify-between text-sm text-base-content text-opacity-60 truncate">
-            <div>
-              <span className="flex flex-wrap items-center">
-                {item.topics.map((topic) => <div className="m-1 topic-button rounded-md badge-primary px-3 py-1 bg-opacity-5 text-xs leading-sm text-primary font-bold capitalize" key={item.name + "_" + topic}>{topic.replace(/\-/g, " ")} </div>)}
-              </span>
-            </div>
-          </div>
+          {previews.length > 0 && previews[index].length > 0 ?
+            '' : <div className='grow mb-4 mx-auto'> </div>
+            }
         </div>
       </div>
     ));
