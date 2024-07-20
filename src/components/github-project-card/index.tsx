@@ -1,7 +1,8 @@
 import { Fragment } from 'react';
-import { AiOutlineFork, AiOutlineStar } from 'react-icons/ai';
+// import { AiOutlineFork, AiOutlineStar } from 'react-icons/ai';
 import { MdInsertLink } from 'react-icons/md';
-import { ga, getLanguageColor, skeleton } from '../../utils';
+// import { ga, getLanguageColor, skeleton } from '../../utils';
+import { ga, skeleton } from '../../utils';
 import { GithubProject } from '../../interfaces/github-project';
 
 const GithubProjectCard = ({
