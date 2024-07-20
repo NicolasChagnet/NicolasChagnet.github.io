@@ -53,7 +53,7 @@ const EducationCard = ({
   };
 
   return (
-    <div className="card compact">
+    <div className="card compact max-lg:hidden">
       <div className="card-body">
         <div className="mx-3">
           <h5 className="card-title">

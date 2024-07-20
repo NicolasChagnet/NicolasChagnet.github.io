@@ -29,7 +29,7 @@ const AvatarCard: React.FC<AvatarCardProps> = ({
 }): JSX.Element => {
   return (
     <div className="card compact bg-base-200">
-      <div className="grid place-items-center py-8">
+      <div className="grid place-items-center">
         {loading || !profile ? (
           <div className="avatar opacity-90">
             <div className="mb-8 rounded-full w-32 h-32">

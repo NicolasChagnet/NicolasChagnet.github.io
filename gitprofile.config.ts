@@ -104,6 +104,7 @@ const CONFIG = {
     website: '',
     phone: '',
     email: 'nchagnet@pm.me',
+    orcid: '0000-0002-4614-0821',
   },
   resume: {
     fileUrl:

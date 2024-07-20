@@ -1,4 +1,4 @@
-import { Fragment } from 'react';
+// import { Fragment } from 'react';
 import {
   AiFillGithub,
   AiFillInstagram,
@@ -18,6 +18,7 @@ import {
   FaStackOverflow,
   FaTelegram,
   FaYoutube,
+  FaOrcid
 } from 'react-icons/fa';
 import { FaSquareThreads } from 'react-icons/fa6';
 import { MdLocationOn } from 'react-icons/md';
@@ -60,89 +61,93 @@ const getFormattedMastodonValue = (
 
 const ListItem: React.FC<{
   icon: React.ReactNode;
-  title: React.ReactNode;
+  // title: React.ReactNode;
   value: React.ReactNode;
   link?: string;
   skeleton?: boolean;
-}> = ({ icon, title, value, link='', skeleton = false }) => {
+}> = ({ icon, value, link='', skeleton = false }) => {
   return (
-    <div className="flex justify-start py-1 px-1 items-center">
-      <div className="flex-grow font-medium gap-2 flex items-center my-0">
-        {icon} {title}
+    <div className="flex py-1 px-1 items-center">
+      <div className="font-medium gap-2 flex items-center my-0">
+        {icon}
+        {/* {title} */}
       </div>
       <div
         className={`${
           skeleton ? 'flex-grow' : ''
-        } text-sm font-normal text-right mr-2 ml-3 ${link ? 'truncate' : ''}`}
+        } text-sm font-normal mr-1 ${link ? 'truncate' : ''}`}
         style={{
           wordBreak: 'break-word',
         }}
       >
+        <span className='flex py-1 px-1 items-center '>
         { link.length > 0 ?
         <a
           href={link}
           target="_blank"
           rel="noreferrer"
-          className="flex justify-start py-2 px-1 items-center decoration-dotted decoration-1 underline underline-offset-2"
+          className="decoration-dotted decoration-1 underline underline-offset-2"
         >
           {value}
         </a> : value
         }
+        </span>
       </div>
     </div>
   );
 };
 
-const OrganizationItem: React.FC<{
-  icon: React.ReactNode;
-  title: React.ReactNode;
-  value: React.ReactNode | string;
-  link?: string;
-  skeleton?: boolean;
-}> = ({ icon, title, value, link, skeleton = false }) => {
-  const renderValue = () => {
-    if (typeof value === 'string') {
-      return value.split(' ').map((company) => {
-        company = company.trim();
-        if (!company) return null;
+// const OrganizationItem: React.FC<{
+//   icon: React.ReactNode;
+//   title: React.ReactNode;
+//   value: React.ReactNode | string;
+//   link?: string;
+//   skeleton?: boolean;
+// }> = ({ icon, title, value, link, skeleton = false }) => {
+//   const renderValue = () => {
+//     if (typeof value === 'string') {
+//       return value.split(' ').map((company) => {
+//         company = company.trim();
+//         if (!company) return null;
 
-        if (isCompanyMention(company)) {
-          return (
-            <a
-              href={companyLink(company)}
-              target="_blank"
-              rel="noreferrer"
-              key={company}
-            >
-              {company}
-            </a>
-          );
-        } else {
-          return <span key={company}>{company}</span>;
-        }
-      });
-    }
-    return value;
-  };
+//         if (isCompanyMention(company)) {
+//           return (
+//             <a
+//               href={companyLink(company)}
+//               target="_blank"
+//               rel="noreferrer"
+//               key={company}
+//             >
+//               {company}
+//             </a>
+//           );
+//         } else {
+//           return <span key={company}>{company}</span>;
+//         }
+//       });
+//     }
+//     return value;
+//   };
 
-  return (
-    <div className="flex justify-start py-2 px-1 items-center">
-      <div className="flex-grow font-medium gap-2 flex items-center my-0">
-        {icon} {title}
-      </div>
-      <div
-        className={`${
-          skeleton ? 'flex-grow' : ''
-        } text-sm font-normal text-right mr-2 ml-3 space-x-2 ${link ? 'truncate' : ''}`}
-        style={{
-          wordBreak: 'break-word',
-        }}
-      >
-        {renderValue()}
-      </div>
-    </div>
-  );
-};
+//   return (
+//     <div className="flex py-2 px-1 items-center">
+//       <div className="font-medium gap-2 flex items-center my-0">
+//         {icon} 
+//         {/* {title} */}
+//       </div>
+//       <div
+//         className={`${
+//           skeleton ? 'flex-grow' : ''
+//         } text-sm font-normal mr-2 ml-3 py-2 px-1 space-x-2 ${link ? 'truncate' : ''}`}
+//         style={{
+//           wordBreak: 'break-word',
+//         }}
+//       >
+//         {renderValue()}
+//       </div>
+//     </div>
+//   );
+// };
 
 /**
  * Renders the details card component.
@@ -162,7 +167,7 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
           key={index}
           skeleton={true}
           icon={skeleton({ widthCls: 'w-4', heightCls: 'h-4' })}
-          title={skeleton({ widthCls: 'w-24', heightCls: 'h-4' })}
+          // title={skeleton({ widthCls: 'w-0', heightCls: 'h-4' })}
           value={skeleton({ widthCls: 'w-full', heightCls: 'h-4' })}
         />,
       );
@@ -178,18 +183,18 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
           {loading || !profile ? (
             renderSkeleton()
           ) : (
-            <Fragment>
+            <div className='flex flex-wrap justify-center'>
               {profile.location && (
                 <ListItem
                   icon={<MdLocationOn />}
-                  title="Based in:"
+                  // title="Based in:"
                   value={profile.location}
                 />
               )}
               {profile.company && (
-                <OrganizationItem
+                <ListItem
                   icon={<FaBuilding />}
-                  title="Organization:"
+                  // title="Organization:"
                   value={profile.company}
                   link={
                     isCompanyMention(profile.company.trim())
@@ -200,14 +205,14 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
               )}
               <ListItem
                 icon={<AiFillGithub />}
-                title="GitHub:"
+                // title="GitHub:"
                 value={github.username}
                 link={`https://github.com/${github.username}`}
               />
               {social?.researchGate && (
                 <ListItem
                   icon={<SiResearchgate />}
-                  title="ResearchGate:"
+                  // title="ResearchGate:"
                   value={social.researchGate}
                   link={`https://www.researchgate.net/profile/${social.researchGate}`}
                 />
@@ -215,7 +220,7 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
               {social?.twitter && (
                 <ListItem
                   icon={<SiTwitter />}
-                  title="Twitter:"
+                  // title="Twitter:"
                   value={social.twitter}
                   link={`https://twitter.com/${social.twitter}`}
                 />
@@ -223,7 +228,7 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
               {social?.mastodon && (
                 <ListItem
                   icon={<FaMastodon />}
-                  title="Mastodon:"
+                  // title="Mastodon:"
                   value={getFormattedMastodonValue(social.mastodon, false)}
                   link={getFormattedMastodonValue(social.mastodon, true)}
                 />
@@ -231,7 +236,7 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
               {social?.linkedin && (
                 <ListItem
                   icon={<FaLinkedin />}
-                  title="LinkedIn:"
+                  // title="LinkedIn:"
                   value={social.linkedin}
                   link={`https://www.linkedin.com/in/${social.linkedin}`}
                 />
@@ -239,7 +244,7 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
               {social?.dribbble && (
                 <ListItem
                   icon={<CgDribbble />}
-                  title="Dribbble:"
+                  // title="Dribbble:"
                   value={social.dribbble}
                   link={`https://dribbble.com/${social.dribbble}`}
                 />
@@ -247,7 +252,7 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
               {social?.behance && (
                 <ListItem
                   icon={<FaBehanceSquare />}
-                  title="Behance:"
+                  // title="Behance:"
                   value={social.behance}
                   link={`https://www.behance.net/${social.behance}`}
                 />
@@ -255,7 +260,7 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
               {social?.facebook && (
                 <ListItem
                   icon={<FaFacebook />}
-                  title="Facebook:"
+                  // title="Facebook:"
                   value={social.facebook}
                   link={`https://www.facebook.com/${social.facebook}`}
                 />
@@ -263,7 +268,7 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
               {social?.instagram && (
                 <ListItem
                   icon={<AiFillInstagram />}
-                  title="Instagram:"
+                  // title="Instagram:"
                   value={social.instagram}
                   link={`https://www.instagram.com/${social.instagram}`}
                 />
@@ -271,7 +276,7 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
               {social?.reddit && (
                 <ListItem
                   icon={<FaReddit />}
-                  title="Reddit:"
+                  // title="Reddit:"
                   value={social.reddit}
                   link={`https://www.reddit.com/user/${social.reddit}`}
                 />
@@ -279,7 +284,7 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
               {social?.threads && (
                 <ListItem
                   icon={<FaSquareThreads />}
-                  title="Threads:"
+                  // title="Threads:"
                   value={social.threads}
                   link={`https://www.threads.net/@${social.threads.replace('@', '')}`}
                 />
@@ -287,7 +292,7 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
               {social?.youtube && (
                 <ListItem
                   icon={<FaYoutube />}
-                  title="YouTube:"
+                  // title="YouTube:"
                   value={`@${social.youtube}`}
                   link={`https://www.youtube.com/@${social.youtube}`}
                 />
@@ -295,7 +300,7 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
               {social?.udemy && (
                 <ListItem
                   icon={<SiUdemy />}
-                  title="Udemy:"
+                  // title="Udemy:"
                   value={social.udemy}
                   link={`https://www.udemy.com/user/${social.udemy}`}
                 />
@@ -303,7 +308,7 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
               {social?.medium && (
                 <ListItem
                   icon={<AiFillMediumSquare />}
-                  title="Medium:"
+                  // title="Medium:"
                   value={social.medium}
                   link={`https://medium.com/@${social.medium}`}
                 />
@@ -311,7 +316,7 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
               {social?.dev && (
                 <ListItem
                   icon={<FaDev />}
-                  title="Dev:"
+                  // title="Dev:"
                   value={social.dev}
                   link={`https://dev.to/${social.dev}`}
                 />
@@ -319,7 +324,7 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
               {social?.stackoverflow && (
                 <ListItem
                   icon={<FaStackOverflow />}
-                  title="Stack Overflow:"
+                  // title="Stack Overflow:"
                   value={social.stackoverflow.split('/').slice(-1)}
                   link={`https://stackoverflow.com/users/${social.stackoverflow}`}
                 />
@@ -327,7 +332,7 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
               {social?.website && (
                 <ListItem
                   icon={<FaGlobe />}
-                  title="Website:"
+                  // title="Website:"
                   value={social.website
                     .replace('https://', '')
                     .replace('http://', '')}
@@ -341,7 +346,7 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
               {social?.skype && (
                 <ListItem
                   icon={<FaSkype />}
-                  title="Skype"
+                  // title="Skype"
                   value={social.skype}
                   link={`skype:${social.skype}?chat`}
                 />
@@ -349,7 +354,7 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
               {social?.telegram && (
                 <ListItem
                   icon={<FaTelegram />}
-                  title="Telegram"
+                  // title="Telegram"
                   value={social.telegram}
                   link={`https://t.me/${social.telegram}`}
                 />
@@ -357,7 +362,7 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
               {social?.phone && (
                 <ListItem
                   icon={<RiPhoneFill />}
-                  title="Phone:"
+                  // title="Phone:"
                   value={social.phone}
                   link={`tel:${social.phone}`}
                 />
@@ -365,12 +370,19 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
               {social?.email && (
                 <ListItem
                   icon={<RiMailFill />}
-                  title="Email:"
+                  // title="Email:"
                   value={social.email}
                   link={`mailto:${social.email}`}
                 />
               )}
-            </Fragment>
+              {social?.orcid && (
+                <ListItem
+                  icon={<FaOrcid />}
+                  value={social.orcid}
+                  link={`https://orcid.org/${social.orcid}`}
+                />
+              )}
+            </div>
           )}
         </div>
       </div>

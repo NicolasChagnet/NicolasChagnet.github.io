@@ -209,6 +209,8 @@ interface Social {
    * Email
    */
   email?: string;
+
+  orcid?: string;
 }
 
 interface Resume {
