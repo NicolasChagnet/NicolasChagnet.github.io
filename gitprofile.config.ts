@@ -294,7 +294,7 @@ const CONFIG = {
     customTheme: {
       primary: '#353bf7',
       secondary: '#219aaf',
-      accent: '#fffff',
+      accent: '#ffffff',
       neutral: '#2A2730',
       'base-100': '#ffffff',
       'base-200': '#f9fafb',
