@@ -31,8 +31,9 @@ const CONFIG = {
           'NicolasChagnet/pokemon-team-optimizer', 
           'NicolasChagnet/energy-demand-forecast', 
           'NicolasChagnet/ising-model-numerics',
+          'NicolasChagnet/game-ai-421-dice',
           'NicolasChagnet/snippy-rs', 
-          'NicolasChagnet/arxiv-scanner-flask'
+          // 'NicolasChagnet/arxiv-scanner-flask'
           // , 'NicolasChagnet/zotero-lib-ML'
         ], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
         projects_demos: [
@@ -48,7 +49,7 @@ const CONFIG = {
           'https://github.com/NicolasChagnet/pokemon-team-optimizer/blob/main/demo/demo.gif?raw=True',
           'https://github.com/NicolasChagnet/energy-demand-forecast/blob/main/figs/plot_demo.png?raw=True',
           'https://github.com/NicolasChagnet/ising-model-numerics/blob/main/figs/animated_mc_spins.gif?raw=True',
-          '',
+          'https://github.com/NicolasChagnet/game-ai-421-dice/blob/main/figs/comparison_agents.png?raw=True',
           ''
         ]
       },
