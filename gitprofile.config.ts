@@ -32,7 +32,8 @@ const CONFIG = {
           'NicolasChagnet/energy-demand-forecast', 
           'NicolasChagnet/ising-model-numerics',
           'NicolasChagnet/game-ai-421-dice',
-          'NicolasChagnet/snippy-rs', 
+          // 'NicolasChagnet/snippy-rs',
+          'NicolasChagnet/formula1'
           // 'NicolasChagnet/arxiv-scanner-flask'
           // , 'NicolasChagnet/zotero-lib-ML'
         ], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
@@ -42,7 +43,7 @@ const CONFIG = {
           'https://nicolaschagnet.github.io/energy-demand-forecast/', 
           '',
           '', 
-          ''
+          'https://formula1-dashboard-65yi.onrender.com/'
         ],
         projects_previews: [
           'https://github.com/NicolasChagnet/arxiv-recommendations/blob/main/figs/frequency_title_words_bigram.png?raw=True',
@@ -50,7 +51,7 @@ const CONFIG = {
           'https://github.com/NicolasChagnet/energy-demand-forecast/blob/main/figs/plot_demo.png?raw=True',
           'https://github.com/NicolasChagnet/ising-model-numerics/blob/main/figs/animated_mc_spins.gif?raw=True',
           'https://github.com/NicolasChagnet/game-ai-421-dice/blob/main/figs/comparison_agents.png?raw=True',
-          ''
+          'https://github.com/NicolasChagnet/formula1/blob/main/figs/screenshot_app.png?raw=True',
         ]
       },
     },
