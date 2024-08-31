@@ -85,38 +85,42 @@ const GithubProjectCard = ({
       >
         <div className="flex justify-between flex-col p-4 h-full w-full">
           <div>
-            <div className="flex items-center truncate">
-              <div className="card-title text-lg tracking-wide flex text-base-content opacity-60 self-start">
-                <MdInsertLink className="my-auto" />
-                <a href={item.html_url}
-                  // key={"html_" + index}
-                  onClick={(e) => {
-                    e.preventDefault();
+            <div>
+              <div className="card-title text-lg tracking-wide flex flex-row text-base-content opacity-60">
+                <MdInsertLink className="my-auto flex-none" />
+                <span className="truncate text-ellipsis overflow-hidden grow">
+                  <a href={item.html_url}
+                    // key={"html_" + index}
+                    onClick={(e) => {
+                      e.preventDefault();
 
-                    try {
-                      if (googleAnalyticsId) {
-                        ga.event('Click project', {
-                          project: item.name,
-                        });
+                      try {
+                        if (googleAnalyticsId) {
+                          ga.event('Click project', {
+                            project: item.name,
+                          });
+                        }
+                      } catch (error) {
+                        console.error(error);
                       }
-                    } catch (error) {
-                      console.error(error);
-                    }
 
-                    window?.open(item.html_url, '_blank');
-                  }}
-                  className='compact'
-                >
+                      window?.open(item.html_url, '_blank');
+                    }}
+                    className='compact'
+                  >
                   <span>{item.name}</span>
-                </a>
-                {demos.length > 0 && demos[index].length > 0 ? 
-                  <a href={demos[index]}
-                  // key={"demo_" + index}
-                  className=' py-1 px-1 compact text-xs text-gray-600 hover:bg-gray-600 hover:text-base-100 hover:border-transparent rounded-sm'
-                >
-                  DEMO
-                </a> : ''
-                }
+                  </a>
+                </span>
+                <span className="flex-none">
+                  {demos.length > 0 && demos[index].length > 0 ? 
+                    <a href={demos[index]}
+                      // key={"demo_" + index}
+                      className=' py-1 px-1 compact text-xs text-gray-600 hover:bg-gray-600 hover:text-base-100 hover:border-transparent rounded-sm'
+                    >
+                      DEMO
+                    </a> : ''
+                  }
+                </span>
               </div>
             </div>
             <div className='flex'>
