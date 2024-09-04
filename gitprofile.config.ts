@@ -131,13 +131,13 @@ const CONFIG = {
       company: 'Leiden University',
       position: 'Research Scientist',
       from: 'September 2020',
-      to: 'Present',
+      to: 'October 2024',
     },
     {
       company: 'Leiden University',
       position: 'Teacher Assistant',
       from: 'September 2020',
-      to: 'Present',
+      to: 'January 2024',
     },
     {
       company: 'Leiden University/University of Amsterdam',
