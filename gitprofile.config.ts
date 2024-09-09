@@ -201,7 +201,7 @@ const CONFIG = {
       title: 'Quantization and variational problem of the Gubser-Rocha Einstein-Maxwell-Dilaton model, conformal and non-conformal deformations, and its proper thermodynamics',
       conferenceName: '',
       preprint: '2209.13951',
-      journalName: 'Journal of High Energy Physics',
+      journalName: 'Journal of High Energy Physics (2023)',
       authors: 'N. Chagnet, F. Balm and K. Schalm',
       link: 'https://doi.org/10.1007/JHEP03(2023)081',
       description:
@@ -212,7 +212,7 @@ const CONFIG = {
       title: 'Emerging Fermi liquids from regulated quantum electron stars',
       conferenceName: '',
       preprint: '2204.10092',
-      journalName: 'Journal of High Energy Physics',
+      journalName: 'Journal of High Energy Physics (2022)',
       authors: 'N. Chagnet, V. Ðukić, M. Čubrović and K. Schalm ',
       link: 'https://doi.org/10.1007/JHEP08(2022)222',
       description:
@@ -223,7 +223,7 @@ const CONFIG = {
       title: 'Complexity for Conformal Field Theories in General Dimensions',
       conferenceName: '',
       preprint: '2103.06920',
-      journalName: 'Physical Review Letters',
+      journalName: 'Physical Review Letters (2022)',
       authors: 'N. Chagnet, S. Chapman, J. de Boer and C. Zukowski',
       link: 'https://doi.org/10.1103/PhysRevLett.128.051601',
       description:
