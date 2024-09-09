@@ -18,12 +18,13 @@ import {
   FaStackOverflow,
   FaTelegram,
   FaYoutube,
-  FaOrcid
+  FaOrcid,
+  FaTwitter
 } from 'react-icons/fa';
 import { FaSquareThreads } from 'react-icons/fa6';
 import { MdLocationOn } from 'react-icons/md';
 import { RiMailFill, RiPhoneFill } from 'react-icons/ri';
-import { SiResearchgate, SiTwitter, SiUdemy } from 'react-icons/si';
+import { SiResearchgate, SiUdemy } from 'react-icons/si';
 import { Profile } from '../../interfaces/profile';
 import {
   SanitizedGithub,
@@ -58,6 +59,7 @@ const getFormattedMastodonValue = (
     return `${username}@${server}`;
   }
 };
+
 
 const ListItem: React.FC<{
   icon: React.ReactNode;
@@ -219,7 +221,7 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
               )}
               {social?.twitter && (
                 <ListItem
-                  icon={<SiTwitter />}
+                  icon={<FaTwitter />}
                   // title="Twitter:"
                   value={social.twitter}
                   link={`https://twitter.com/${social.twitter}`}
