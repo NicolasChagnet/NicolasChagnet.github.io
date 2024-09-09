@@ -179,6 +179,7 @@ const CONFIG = {
       title: 'Hydrodynamics of a relativistic charged fluid in the presence of a periodically modulated chemical potential',
       conferenceName: '',
       journalName: 'Scipost Physics (2024)',
+      preprint: '2303.17685',
       authors: 'N. Chagnet and K. Schalm',
       link: 'https://doi.org/10.21468/SciPostPhys.16.1.028',
       description:
@@ -188,6 +189,7 @@ const CONFIG = {
     {
       title: 'T-linear resistivity, optical conductivity, and Planckian transport for a holographic local quantum critical metal in a periodic potential',
       conferenceName: '',
+      preprint: '2211.05492',
       journalName: 'Physical Review B (2023)',
       authors: 'F. Balm, N. Chagnet, S. Arend, J. Aretz, K. Grosvenor, M. Janse, O. Moors, J. Post, V. Ohanesjan, D. Rodriguez-Fernandez, K. Schalm, and J. Zaanen',
       link: 'https://doi.org/10.1103/PhysRevB.108.125145',
@@ -198,6 +200,7 @@ const CONFIG = {
     {
       title: 'Quantization and variational problem of the Gubser-Rocha Einstein-Maxwell-Dilaton model, conformal and non-conformal deformations, and its proper thermodynamics',
       conferenceName: '',
+      preprint: '2209.13951',
       journalName: 'Journal of High Energy Physics',
       authors: 'N. Chagnet, F. Balm and K. Schalm',
       link: 'https://doi.org/10.1007/JHEP03(2023)081',
@@ -208,6 +211,7 @@ const CONFIG = {
     {
       title: 'Emerging Fermi liquids from regulated quantum electron stars',
       conferenceName: '',
+      preprint: '2204.10092',
       journalName: 'Journal of High Energy Physics',
       authors: 'N. Chagnet, V. Ðukić, M. Čubrović and K. Schalm ',
       link: 'https://doi.org/10.1007/JHEP08(2022)222',
@@ -218,6 +222,7 @@ const CONFIG = {
     {
       title: 'Complexity for Conformal Field Theories in General Dimensions',
       conferenceName: '',
+      preprint: '2103.06920',
       journalName: 'Physical Review Letters',
       authors: 'N. Chagnet, S. Chapman, J. de Boer and C. Zukowski',
       link: 'https://doi.org/10.1103/PhysRevLett.128.051601',

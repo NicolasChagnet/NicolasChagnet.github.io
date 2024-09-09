@@ -98,6 +98,7 @@ export interface SanitizedEducation {
 export interface SanitizedPublication {
   title: string;
   conferenceName?: string;
+  preprint?: string;
   journalName?: string;
   authors?: string;
   link?: string;

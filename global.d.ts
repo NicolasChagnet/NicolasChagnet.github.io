@@ -245,6 +245,7 @@ interface Education {
 interface Publication {
   title: string;
   conferenceName?: string;
+  preprint?: string;
   journalName?: string;
   authors?: string;
   link?: string;

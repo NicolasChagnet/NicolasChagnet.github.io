@@ -90,28 +90,37 @@ const PublicationCard = ({
                       {item.conferenceName}
                     </p>
                   )}
-                  {item.journalName && (
-                    <p className="text-base-content opacity-50 text-sm">
-                      <span className="font-bold">Journal:</span> <a href={item.link} target="_blank" rel="noreferrer" className='underline'>{item.journalName}</a>
-                    </p>
-                  )}
                   {item.authors && (
                     <p className="text-base-content opacity-50 text-sm">
                       <span className="font-bold">Authors:</span> {item.authors}
                     </p>
                   )}
-                  {item.description && (
-                    <p className="mt-2 text-base-content text-opacity-60 text-sm text-justify">
-                      {item.description}
-                    </p>
-                  )}
-                  <div>
-                    <a href={item.pdf_link} target="_blank" rel="noreferrer" className="btn btn-outline btn-sm text-xs mt-1 opacity-80 float-right text-primary hover:bg-primary hover:border-transparent rounded-sm">
-                      Download PDF 
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="size-6 ml-0.5 h-4">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
-                      </svg>
-                    </a>
+                  <div className='grid grid-cols-2'>
+                    <div>
+                      {item.journalName && (
+                        <p className="text-base-content opacity-50 text-sm">
+                          <span className="font-bold">Journal:</span> <a href={item.link} target="_blank" rel="noreferrer" className='underline'>{item.journalName}</a>
+                        </p>
+                      )}
+                      {item.preprint && (
+                        <p className="text-base-content opacity-50 text-sm">
+                          <span className="font-bold">Preprint:</span> <a href={"http://arxiv.org/abs/" + item.preprint} target="_blank" rel="noreferrer" className='underline'>arXiv:{item.preprint}</a>
+                        </p>
+                      )}
+                      {item.description && (
+                        <p className="mt-2 text-base-content text-opacity-60 text-sm text-justify">
+                          {item.description}
+                        </p>
+                      )}
+                    </div>
+                    <div>
+                      <a href={item.pdf_link} target="_blank" rel="noreferrer" className="btn btn-outline btn-sm text-xs mt-1 opacity-80 float-right text-primary hover:bg-primary hover:border-transparent rounded-sm">
+                        Download PDF 
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="size-6 ml-0.5 h-4">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                        </svg>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
